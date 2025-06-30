@@ -15,7 +15,9 @@ const BlogList = () => {
               }`}
             >
               {item}
-              <div className="absolute left-0 right-0 top-0 h-7 -z-1 bg-blue-500 rounded-full"></div>
+              {menu === item && (
+                <div className="absolute left-0 right-0 top-0 h-7 -z-1 bg-blue-500 rounded-full"></div>
+              )}
             </button>
           </div>
         ))}
